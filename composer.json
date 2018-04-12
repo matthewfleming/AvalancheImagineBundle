@@ -2,17 +2,21 @@
     "name": "matthewfleming/imagine-bundle",
     "description": "Image manipulation using Imagine and Twig Filters.",
     "keywords": ["image manipulation", "imagine"],
-    "homepage": "https://github.com/matthewfleming/AvalancheImagineBundle",
+    "homepage": "https://github.com/matthewfleming/avalanche-imagine-bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "repositories":[
         {
             "type":"git",
-            "url":"git://github.com/matthewfleming/AvalancheImagineBundle.git"
+            "url":"git://github.com/matthewfleming/avalanche-imagine-bundle.git"
         }
     ],
-
     "authors": [
+        {
+            "name": "Matthew Fleming",
+            "email": "mattfleming.au@gmail.com",
+            "homepage": "https://github.com/matthewfleming/"
+        },
         {
             "name": "Bulat Shakirzyanov",
             "email": "mallluhuct@gmail.com",

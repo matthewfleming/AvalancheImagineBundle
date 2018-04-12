@@ -2,7 +2,9 @@
 AvalancheImagineBundle
 ======================
 
-This fork provides compatibility for symfony 2.8 - 3.4
+This fork provides compatibility for symfony 2.8 - 3.4.
+
+It will allow you to fix the avalanche123/imagine-bundle deprecation messages in 2.8 then upgrade to 3.4 without errors.
 
 This bundle provides easy image manipulation support for Symfony2. For example,
 with this bundle, the following is possible:
@@ -31,8 +33,14 @@ Add AvalancheImagineBundle in your composer.json:
 
 ```js
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/matthewfleming/avalanche-imagine-bundle"
+        }
+    ],
     "require": {
-        "avalanche123/imagine-bundle": "v2.1"
+        "matthewfleming/imagine-bundle": "~2.2"
     }
 }
 ```
@@ -40,10 +48,10 @@ Add AvalancheImagineBundle in your composer.json:
 Now tell composer to download the bundle by running the command:
 
 ``` bash
-$ php composer.phar update avalanche123/imagine-bundle
+$ php composer.phar update matthewfleming/imagine-bundle
 ```
 
-Composer will install the bundle to your project's `vendor/avalanche123/imagine-bundle` directory.
+Composer will install the bundle to your project's `vendor/matthewfleming/imagine-bundle` directory.
 
 ### Step 2: Enable the bundle
 
