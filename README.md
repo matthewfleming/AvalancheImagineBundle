@@ -1,7 +1,8 @@
-changes to use with symfony 3.4
 
 AvalancheImagineBundle
 ======================
+
+This fork provides compatibility for symfony 2.8 - 3.4
 
 This bundle provides easy image manipulation support for Symfony2. For example,
 with this bundle, the following is possible:

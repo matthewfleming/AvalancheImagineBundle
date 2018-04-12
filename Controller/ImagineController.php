@@ -55,9 +55,9 @@ class ImagineController
      *
      * @return Response
      */
-    public function filter($path, $filter)
+    public function filter(Request $request, $path, $filter)
     {
-        $cachedPath = $this->cacheManager->cacheImage($this->request->getBaseUrl(), $path, $filter);
+        $cachedPath = $this->cacheManager->cacheImage($request->getBaseUrl(), $path, $filter);
         
          // if cache path cannot be determined, return 404
         if (null === $cachedPath) {
@@ -105,14 +105,4 @@ class ImagineController
             throw $e;
         }
     }
-
-	/**
-	 * Set the request
-	 *
-	 * @param Request $request
-	 */
-	public function setRequest(Request $request = null)
-	{
-		$this->request = $request;
-	}
 }

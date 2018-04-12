@@ -1,14 +1,14 @@
 {
-    "name": "tsifra/imagine-bundle",
+    "name": "matthewfleming/imagine-bundle",
     "description": "Image manipulation using Imagine and Twig Filters.",
     "keywords": ["image manipulation", "imagine"],
-    "homepage": "https://github.com/avalanche123/AvalancheImagineBundle",
+    "homepage": "https://github.com/matthewfleming/AvalancheImagineBundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "repositories":[
         {
             "type":"git",
-            "url":"git://github.com/avalanche123/Imagine.git"
+            "url":"git://github.com/matthewfleming/AvalancheImagineBundle.git"
         }
     ],
 
@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "symfony/framework-bundle": "~2.3|~3.0",
+        "symfony/framework-bundle": "~2.8|~3.0",
         "imagine/Imagine": ">=0.2.0,<0.6.0"
     },
     "require-dev": {
